@@ -1,1 +1,0 @@
-添加gitignore删除pycache
