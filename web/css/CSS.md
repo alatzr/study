@@ -24,7 +24,7 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 
 <style> </style>
 
-<img src="C:\Users\Alatzr\AppData\Roaming\Typora\typora-user-images\image-20220117154934583.png" alt="image-20220117154934583"  />
+<img src="..\..\.all_images\image-20220117154934583.png" alt="image-20220117154934583"/>
 
 **基本入门**
 
@@ -57,7 +57,7 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 </html>
 ```
 
-建议使用这种引用方式：![image-20220117154508544](C:\Users\Alatzr\AppData\Roaming\Typora\typora-user-images\image-20220117154508544.png)
+建议使用这种引用方式：![image-20220117154508544](../../.all_images/image-20220117154508544.png)
 
 **css的优势：**
 
@@ -206,10 +206,6 @@ a[href$="http"]{
     font-size: 20px;
 }
 ```
-
-
-
-
 
 
 
