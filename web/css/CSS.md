@@ -59,6 +59,7 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 
 行内样式：
 
+<<<<<<< HEAD
 ```html
 <h1 style="red">标题1</h1>
 ```
@@ -77,6 +78,13 @@ h1{
     font-size: 50px;
 }
 ```
+=======
+
+<div align="center">
+    <img src=https://github.com/alatzr/study/blob/master/.all_images/image-20220117154508544.png width="px">
+</div>
+
+>>>>>>> d4c8cd6dd7c78b7591862446ff5e87733f9e2d9a
 
 ![image-20220117154508544](../../.all_images/image-20220117154508544.png)
 
