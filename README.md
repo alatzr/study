@@ -1,4 +1,4 @@
 ## 加油学习吧！！！
 
-## 跳转：
-### **[CSS](https://github.com/alatzr/study/blob/master/web/css/CSS.md)**
+## 目录
+> **[CSS](https://github.com/alatzr/study/blob/master/web/css/CSS.md)**
