@@ -24,9 +24,7 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 
 ### 1.3 快速入门
 
-<style> </style>
-
-<img src="..\..\.all_images\image-20220117154934583.png" alt="image-20220117154934583"/>
+<style> css代码 </style>
 
 **基本入门**
 
@@ -59,12 +57,25 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 </html>
 ```
 
-建议使用这种引用方式：
+行内样式：
 
 ```html
-<div>
-    <img src=../../.all_images/image-20220117154508544.png>
-</div>
+<h1 style="red">标题1</h1>
+```
+
+引用样式：
+
+``` html
+<link rel="stylesheet" href="css/style.css">
+```
+
+```css
+/*位置：css/style.css */
+h1{
+    color: red;
+    background: green;
+    font-size: 50px;
+}
 ```
 
 ![image-20220117154508544](../../.all_images/image-20220117154508544.png)
@@ -216,6 +227,12 @@ a[href$="http"]{
     font-size: 20px;
 }
 ```
+
+
+
+
+
+## 三、美化网页元素
 
 
 
