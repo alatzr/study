@@ -59,7 +59,6 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 
 行内样式：
 
-<<<<<<< HEAD
 ```html
 <h1 style="red">标题1</h1>
 ```
@@ -78,14 +77,6 @@ h1{
     font-size: 50px;
 }
 ```
-=======
-
-<div align="center">
-    <img src=https://github.com/alatzr/study/blob/master/.all_images/image-20220117154508544.png width="px">
-</div>
-
->>>>>>> d4c8cd6dd7c78b7591862446ff5e87733f9e2d9a
-
 ![image-20220117154508544](../../.all_images/image-20220117154508544.png)
 
 **css的优势：**
@@ -242,5 +233,126 @@ a[href$="http"]{
 
 ## 三、美化网页元素
 
+### 3.1 为什么要美化
 
+1. 有效传递页面信息
+2. 提高用户体验
+
+
+
+span标签：重点要突出的字，使用span标签套起来
+
+```html
+<style>
+    #important-paragraph{
+        font-size: 50px;
+        color: red;
+    }
+</style>
+
+<p>这是一个<span id="important-paragraph">段落</span></p>
+```
+
+<img src = "../../.all_images/image-20220117203308962.png" align="left" style="zoom:70%">
+
+
+
+### [3.2 字体和样式](https://www.w3school.com.cn/css/css_font.asp)
+
+```html
+<!--
+font-family：字体
+font-size：字体大小
+font-weight：字体粗细
+color：字体颜色
+	单词：red,green,blue...
+	16进制：#FF0000,#00FF00,#0000FFF
+	RGBA:rgba(255,0,0,100)
+
+text-align：排版
+	left：靠左，right：靠右，center：居中
+
+text-indent：首行缩进
+	2em：缩进2个字母
+	2px：缩进两个像素
+
+height：块高度
+line-height：行高
+	如果块高和行高一样，文字则可居中对齐
+
+text-decoration:underline     下划线
+			   :line-through  删除线
+			   :overline      上划线
+-->
+<style>
+    body{
+        font-family: "Arial Black", 楷体;
+        color: darkred;
+    }
+    h1{
+        font-size: 50px;
+    }
+</style>
+
+```
+
+
+
+### [3.3伪类](https://www.w3school.com.cn/css/css_pseudo_classes.asp)
+
+伪类用于定义元素的特殊状态。
+
+例如，它可以用于：
+
+- 设置鼠标悬停在元素上时的样式
+- 为已访问和未访问链接设置不同的样式
+- 设置元素获得焦点时的样式
+
+```css
+/*语法*/
+selector:pseudo-class {
+  property: value;
+}
+/*示例*/
+a:link {color:#FF0000;} /* 未访问的链接 */
+a:visited {color:#00FF00;} /* 已访问的链接 */
+a:hover {color:#FF00FF;} /* 鼠标悬停时触发 */
+a:active {color:#0000FF;} /* 已选中的链接 */
+```
+
+
+
+### [3.4渐变](https://www.w3school.com.cn/css/css3_gradients.asp)
+
+CSS 定义了两种渐变类型：
+
+- *线性渐变*（向下/向上/向左/向右/对角线）
+
+  ```css
+  background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+  ```
+
+- *径向渐变*（由其中心定义）
+
+  ```css
+  background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+  ```
+
+### 3.5 阴影效果
+
+<img src="../../.all_images/image-20220117225756778.png" align="left">
+
+```html
+<style>
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px #000000;  <!--水平偏移 垂直偏移 模糊度 颜色-->
+}
+<!--h2的内容上添加了包围文字的黄色边框-->    
+h2 {
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+</style>
+```
 
