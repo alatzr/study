@@ -62,8 +62,8 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 建议使用这种引用方式：
 
 
-<div>
-    <img src=../../.all_images/image-20220117154508544.png>
+<div align="center">
+    <img src=../../.all_images/image-20220117154508544.png width="px">
 </div>
 
 
