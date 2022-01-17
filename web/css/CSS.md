@@ -253,7 +253,7 @@ span标签：重点要突出的字，使用span标签套起来
 <p>这是一个<span id="important-paragraph">段落</span></p>
 ```
 
-<img src = "../../.all_images/image-20220117203308962.png" align="left" style="zoom:70%"> \n
+<img src = "../../.all_images/image-20220117203308962.png" align="left" style="zoom:70%"> <br/>
 
 
 
