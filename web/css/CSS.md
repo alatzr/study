@@ -63,7 +63,7 @@ CSS3.0 圆角，阴影，动画......浏览器兼容性
 
 
 <div align="center">
-    <img src=../../.all_images/image-20220117154508544.png width="px">
+    <img src=https://github.com/alatzr/study/blob/master/.all_images/image-20220117154508544.png width="px">
 </div>
 
 
