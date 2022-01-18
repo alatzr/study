@@ -341,7 +341,7 @@ CSS 定义了两种渐变类型：
 
 ### 3.5 阴影效果
 
-<img src="../../.all_images/image-20220117225756778.png" align="left">
+<img src="../../.all_images/image-20220117225756778.png" align="center">
 
 ```html
 <style>
