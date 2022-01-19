@@ -339,7 +339,7 @@ CSS 定义了两种渐变类型：
   background-image: radial-gradient(shape size at position, start-color, ..., last-color);
   ```
 
-### 3.5 阴影效果
+### 3.5阴影效果
 
 <img src="../../.all_images/image-20220117225756778.png" align="center">
 

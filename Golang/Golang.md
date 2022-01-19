@@ -15,7 +15,84 @@ func mian(){
 
 直接运行：`go run helloworld.go`
 
+### 1.1输入和输出
 
+[fmt package in Doc](https://pkg.go.dev/fmt#pkg-functions)
+
+```go
+package main
+import "fmt"
+
+func main(){
+    /*
+    输入和输出：
+    	fmt包；输入输出
+    	输出：
+    		Print() 打印
+    		Println() 换行打印
+    		Printf() 格式化打印
+    	输入：
+    		Scanf() 格式化输入
+    		Scanln() 输入
+    		bufio.NewReader(os.Stdin)	
+    */
+    i := 'w'
+    fmt.Printf("%%q：%q\n", i)  // 'w'     原字符
+    fmt.Printf("%%v: %v\n", i)  // 119     the value in a default format
+    fmt.Printf("%%#v: %#v\n", i)  // 119   value
+    fmt.Printf("%%T：%T\n", i)  // int32   type
+    fmt.Printf("%%U：%U\n", i)  // U+0077  Unicode Format
+    fmt.Printf("%%p：%p\n", i)  // 内存地址
+    var (
+    	x int
+        y string
+        j float64
+        k int
+    )
+    fmt.Print("请输入一个整数，一个字符串：")
+    fmt.Scanln(&x, &y)  // 读取键盘输入，通过操作地址赋值给x，y
+    fmt.Prinln(x, y)
+    
+    fmt.Println("请输入一个浮点数，一个整数，用三个英文逗号隔开：")
+    fmt.Scanf("%f,,,%d", &j, &k)
+    fmt.Prinln(j, k)
+    
+    fmt.Print("请输入一个字符串：")
+    reader = bufio.Reader(os.Stdin)
+    s1, _ = reader.ReadString('\n')  // 遇到\n结束输入
+    fmt.Println(s1)
+}
+```
+
+out:
+
+> %q：'w'
+> %v: 119
+> %#v: 119
+> %T：int32
+> %U：U+0077
+> %p：%!p(int32=119)
+> 请输入一个整数，一个字符串：10 abc
+> 10 abc
+> 请输入一个浮点数，一个整数，用三个英文逗号隔开：
+> 3.14,,,222
+> 3.14 222
+> 请输入一个字符串：like
+> like
+
+
+
+**the default format for %v is:**
+
+> ```
+> bool:                    %t
+> int, int8 etc.:          %d
+> uint, uint8 etc.:        %d, %#x if printed with %#v
+> float32, complex64, etc: %g
+> string:                  %s
+> chan:                    %p
+> pointer:                 %p
+> ```
 
 ## 二、变量
 
@@ -99,6 +176,24 @@ const (
 
 ![image-20220118185002247](../.all_images/image-20220118185002247.png)<br/>
 
+```go
+/*
+位运算符：
+	将数值转换为二进制后进行运算，按位操作
+	与：&
+	或：|
+	异或：^
+		二元：a ^ b
+			相同为1，不同为0
+		一元：^a  
+			按位取反：
+			1——>0
+			0——>1
+	位清空：&^
+		对于 a &^ b, 如果b上数值为1，则结果位去0，如果b上数值为0，则取a的值。
+*/
+```
+
 
 
 关键字：
@@ -120,6 +215,37 @@ const (
   - byte
   - rune
 - string 字符型
+
+```go
+/*
+go语言的基本数据类型：
+    1.基本数据类型：
+        布尔类型:
+            取值：true， false
+        数值类型：
+            整数int：
+                有符号：最高位表示符号位，0整1负，其余为表示数值
+                    int8：-128~127
+                    int16：-32768~32767
+                    int32：-2147483648~2147483647
+                    int64：-9223372036854775808~9223372036854775807 （19位数）
+                无符号：所有位都表示数值
+                    uint8：0~256
+                    uint16：0~65535
+                    uint32：0~4294967295  （10位数）
+                    uint64：0~18446744073709551615 （20位数）
+                另外：
+                    byte：unit8的别称
+                    rune：int32的别称
+            浮点数float：
+                单精度float32:
+                双精度float64:
+            负数complex：
+        字符串
+    2.复合类型
+        array, slice, map, fucntion, pointer, struct, interface, channel...
+*/
+```
 
 
 
@@ -248,13 +374,55 @@ func main(){
 
 
 
-### 4.3 循环语句for
+### 4.3循环语句for
 
 语法格式：
 
 `for init; condition; increment{
     statement
 }`
+
+```go
+package main
+import "fmt"
+
+func main(){
+    /*
+    1.标准写法：
+        for 表达式1;表达式2;表达式3{
+            循环体
+        }
+    */
+    for i := 0; i < 10; i ++{
+        fmt.Println(i)
+    }
+    /*
+    2.同时省略表达式1和表达式3    // 类似于变体的while循环，go中没有while
+        for 表达式2{
+            循环体
+        }
+    */
+    var j int = 0
+    for j < 10{
+        fmt.Println(j)
+        j ++
+    }
+    /*
+    3.省略所有表达式
+        for {
+            循环体
+        }
+    */
+    k := 0
+    for {
+        fmt.Println(k)
+        k ++
+        if k >= 10{
+            break
+        }
+    }
+}
+```
 
 求1-100的整数和：
 
@@ -273,5 +441,37 @@ func main(){
 
 
 
+### 4.4循环控制语句break、continue
 
+break 退出循环
+
+continue 跳过循环执行下一次循环
+
+对于多层循环嵌套，break默认只结束当前层，若要结束外层，则需给外层循环起别名：
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+    out:for i:=0; i<5; i++{
+        for j:=0; j<5; j++{
+            if j==2{
+            	break out  // 通过out别名来终止外层循环
+            }
+            fmt.Printf("i:%d, j:%d\n", i, j)
+        }
+    }
+}
+```
+
+
+
+
+
+### 4.5跳转语句goto
+
+```go
+```
 
