@@ -160,6 +160,74 @@ class Stack():
 
 ## 六、树
 
+树的定义：
+
+1.常规定义
+
+- 有一个根节点；
+- 除根节点外，其他每个节点都与其唯一的父节点相连；
+- 从根节点到其他每个节点都有且仅有一条路径；
+- 如果每个节点最多有两个子节点，我们就称这样的树为**二叉树** 。
+
+2.递归定义
+
+- 一棵树要么为空，要么由一个根节点和零棵或多棵子树构成，子树本身也是一棵树。每棵子树的根节点通过一条边连到父树的根节点。
+
+3.完全二叉树：
+
+- 除了最底层，其他每一层的节点都是满的，最底层节点从左往右填充
+
+
+
+*递归定义的一棵树 ：*
+
+```python
+class BinaryTree:
+    def __init__(self, root):
+        self.val = root
+        self.left = None
+        self.right = None
+
+    def insertLeft(self, node):
+        if self.left == None:  # 如果为空，直接插入
+            self.left = BinaryTree(node)
+        else:                  # 已经存在左子节点，插入一个节点需要将当前节点降一层 
+            t = BinaryTree(node)
+            t.left = self.left
+            self.left = t
+
+    def insertRight(self, node):
+        if self.right == None:
+            self.right = BinaryTree(node)
+        else:
+            t = BinaryTree(node)
+            t.right = self.right
+            self.right = t
+
+    def getRight(self):
+        return self.right
+
+    def getLeft(self):
+        return self.left
+
+    def setRootVal(self, val):
+        self.val = val
+
+    def getRootVal(self):
+        return self.val
+
+```
+
+![image-20220209004945791](../../.all_images/image-20220209004945791.png)
+
+
+
+二叉堆——最小堆
+
+
+
+
+
 
 
 ## 七、图
