@@ -4,3 +4,6 @@
 > **[CSS](https://github.com/alatzr/study/blob/master/web/css/CSS.md)**
 >
 > **[Golang](https://github.com/alatzr/study/blob/master/Golang/Golang.md)**
+> 
+> **[DataStructure](https://github.com/alatzr/study/blob/master/python_study/data_structure/data_structure.md)**
+
