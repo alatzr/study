@@ -20,9 +20,9 @@
 
 ![](../.all_images/图片 (1).png)
 
-![](../.all_images/图片 (2).png)
+![](../.all_images/图片（2）.png)
 
-![](../.all_images/图片 (3).png)
+![](../.all_images/图片（3）.png)
 
 
 
