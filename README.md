@@ -7,4 +7,4 @@
 > 
 > **[DataStructure](https://github.com/alatzr/study/blob/master/python_study/data_structure/data_structure.md)**
 >
-> **[Data2CustomGame](https://github.com/alatzr/study/blob/master/dota2_custom_game_study/dota2_custom_game_study.md)**
+> **[Dota2CustomGame](https://github.com/alatzr/study/blob/master/dota2_custom_game_study/dota2_custom_game_study.md)**
