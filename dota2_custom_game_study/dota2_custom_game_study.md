@@ -16,13 +16,13 @@
 
 1.地图文件目录
 
-![](../.all_images/图片.png)
+![](../.all_images/dota_img0.png)
 
-![](../.all_images/图片 (1).png)
+![](../.all_images/dota_img1.png)
 
-![](../.all_images/图片（2）.png)
+![](../.all_images/dota_img2.png)
 
-![](../.all_images/图片（3）.png)
+![](../.all_images/dota_img3.png)
 
 
 
