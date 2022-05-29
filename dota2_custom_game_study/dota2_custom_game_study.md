@@ -2,7 +2,7 @@
 
 > moddota：https://moddota.com/
 >
-> Value官方创意工坊：https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools:zh-cn
+> Valve官方创意工坊：https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools:zh-cn
 >
 > RobinCode_Dota2API：https://robincode.cn/dota2/logs
 >
