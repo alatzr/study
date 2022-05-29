@@ -9,8 +9,11 @@
 > 阿哈利姆魔法隐修议会：http://www.dota2rpg.com/
 >
 > reddit：https://www.reddit.com/r/Dota2Modding/
-
-
+>
+> b站彩紫睨羽编辑器入门：https://www.bilibili.com/video/BV1s4411W7rw?spm_id_from=333.999.0.0
+>
+> Youtube入门教程：[https://www.bilibili.com/video/BV1s4411W7rw?spm_id_from=333.999.0.0](https://www.youtube.com/watch?v=kzj9yM_9zAw&list=PL7yysLaMSd3uY4iJKJdRrTkN1gYePkMz2)
+> 
 
 ## 一、地形编辑器与关卡设计
 
