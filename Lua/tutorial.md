@@ -67,11 +67,24 @@ or	repeat	return	then	ture
 注释]]
 ```
 
+算术运算符：
 
+\+ \- \* /  ^ % 
 
 关系运算符：
 
 <  >  <=  >=  ==  ~=
+
+逻辑操作符：
+
+and、or、not
+
+字符串连接：
+
+```lua
+print("hello" ... "world")  --> hello world
+print(0 ... 1)  --> 01  注意0和.之间要有空格，否则会被视为小数点。
+```
 
 
 
@@ -84,4 +97,75 @@ math.random(l, u) -- return real number [l, u]
 ```
 
 
+
+### 控制语句
+
+if - else
+
+```lua
+-- if else
+a, b = 1, 2
+if a > b then
+    print("a > b")
+else
+    print("a <= b")
+end
+
+-- if elseif elseif ... else 
+print("input your score!")
+score = tonumber(io.read())
+if score >= 90 then
+    print("A")
+elseif score >= 80 then
+    print("B")
+elseif score >= 70 then
+    print("c")
+else
+    print("D")
+end
+```
+
+while 循环
+
+```lua
+local i = 1
+while i < 10 do
+    print(i)
+    i = i + 1
+end
+```
+
+repeat-until，相当于do-while,循环体至少执行一次
+
+```lua
+repeat
+    line = io.read()
+until line == ""  -- 持续获取输入，且至少获取一次，直到输入的内容为空停止
+print(line)
+```
+
+数字型for循环（numeric for）
+
+```lua
+--[[
+for start, stop, step do
+	<loop body>
+end
+]]
+
+for i = 1, 10, 2 do
+    io.write(i, ' ')  --> 1 3 5 7 9
+end
+```
+
+泛型fo循环（generic for）
+
+```lua
+days = {"0","1","2","3","4","5","6"}
+rev_days = {}
+for k, v in pairs(days) do  -- table<pairs> array<ipairs>
+    rev_days[v] = k
+end
+
+```
 
