@@ -30,11 +30,53 @@
 
 
 
-2.按钮和操作
-
 
 
 ## 二、技能编写
+
+game/\<addonName\>/scripts/文件夹下，有两个主要文件夹：**npc** 和 **vscripts**. 
+
+**npc**文件夹包含以下文件：
+
+- npc_**abilities**_custom.txt - 自定义技能
+- npc_**heroes**_custom.txt - 英雄技能和状态
+- npc_**items**_custom.txt - 自定义物品
+- npc_**units**_custom.txt - 非英雄单位（包括所有生物和建筑）
+- npc_**abilities**_override.txt - 在原有dota基础技能或物品上进行魔改，只能改动数值和描述等
+- **herolist**.txt - 自定义可选英雄
+
+
+
+**vscripts**文件夹用于存放所有lua脚本：
+
+There's 4 applications for Lua in Dota:
+
+- Game Logic - 游戏逻辑
+- DataDriven RunScript - 数据驱动脚本
+- Hammer I/O - Hammer接口
+- Custom UI Events - 自定义UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
